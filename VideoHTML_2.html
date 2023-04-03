@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="favicon.ico" />
+        <title>Video</title>
+        <!-- Bootstrap core CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <style>
+      body {
+        background-color: rgba(9, 67, 108, 0.6);
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+      }
+      .container-fluid {
+        background-color: rgba(9, 67, 108, 0.6);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- main content - start -->
+    <div class="container">
+        <!-- main content - start -->
+        <!--Awal Navbar-->
+        <nav class="navbar navbar-expand-md navbar-invers fixed-top bg-black ">
+          <a class="navbar-brand" href="#">
+            <img src="image/Logo_Trijoyco.png" height="50px" /> TRIJOYCO
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarCollapse"
+            aria-controls="navbarCollapse"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!--Baris ini menunjukkan elemen menu yang akan ditampilkan ketika tombol
+          toggler diklik-->
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <!--Baris ini menunjukkan elemen menu yang akan ditampilkan ketika tombol
+            toggler diklik-->
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="Halaman_utama.html">HOME</a>
+              </li>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Contact.html">CONTACT</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="Materi.html">BOOKS</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <!--Akhir navbar-->
+
+  <!--Awal Content-->
+    <div class="container-fluid mt-5 pt-1">
+      <div class="container">
+        <div class="card bg-transparent text-white mt-4">
+          <div class="card-body bg-transparent">
+            <video width="100%" controls>
+              <source src="video/HTML/2.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Akhir content -->
+    <!-- Bootstrap core JavaScript
+ Placed at the end of the document so the pages load faster -->
+    <script src="jquery-3.6.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/popper.min.js"></script>
+  </body>
+</html>

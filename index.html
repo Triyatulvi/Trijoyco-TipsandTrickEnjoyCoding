@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="favicon.ico" />
+    <title>Login</title>
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+  </head>
+
+  <style class="text/css">
+    body {
+      background: url(image/Login.jpg) no-repeat;
+      width: 90%;
+      height: 120vh;
+      background-size: cover;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-sm-6 col-md-3">
+          <form action="Halaman_utama.html" class="needs-validation" novalidate>
+            <center>
+              <img class="avatar" src="image/avatar profile (1).svg" />
+            </center>
+            <h2 align="center">Selamat Datang</h2>
+            <div class="input-div one">
+              <div class="i">
+                <img src="image/icon_username-fill.svg" width="35" />
+              </div>
+              <div>
+                <h5>Username</h5>
+                <input
+                  class="input"
+                  type="text"
+                  placeholder="Username"
+                  required
+                />
+                <div class="valid-feedback"></div>
+                <div class="invalid-feedback">please fill in the username!</div>
+              </div>
+            </div>
+            <div class="input-div two">
+              <div class="i">
+                <img src="image/lock-fill.svg" width="35" />
+              </div>
+              <div>
+                <h5>Password</h5>
+                <input
+                  class="input"
+                  type="password"
+                  placeholder="Password"
+                  required
+                />
+                <div class="valid-feedback"></div>
+                <div class="invalid-feedback">please fill in the password!</div>
+              </div>
+            </div>
+            <a href="#">Forgot Password ?</a>
+            <input type="submit" class="btn-Kirim" value="Login" />
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- Bootstrap core JavaScript
+     Placed at the end of the document so the pages load faster -->
+    <script src="jquery-3.6.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script>
+      (function () {
+        "use strict";
+        window.addEventListener(
+          "load",
+          function () {
+            var forms = document.getElementsByClassName("needs-validation");
+            var validation = Array.prototype.filter.call(
+              forms,
+              function (form) {
+                form.addEventListener(
+                  "submit",
+                  function (event) {
+                    if (form.checkValidity() === false) {
+                      event.preventDefault();
+                      event.stopPropagation();
+                    }
+                    form.classList.add("was-validated");
+                  },
+                  false
+                );
+              }
+            );
+          },
+          false
+        );
+      })();
+    </script>
+  </body>
+</html>

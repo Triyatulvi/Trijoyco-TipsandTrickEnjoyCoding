@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="favicon.ico" />
+    <title>Contact</title>
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+  </head>
+
+  <!--CSS-->
+  <style type="text/css">
+     body {
+      background-image: radial-gradient(
+        circle farthest-corner at 40% 50%,
+        rgba(84, 127, 221, 0.92) 0.1%,
+        rgba(228, 230, 231, 0.63) 90.1%
+      );
+    }
+  </style>
+  <!--Akhir CSS-->
+
+  <body class="bg-white">
+    <!-- main content - start -->
+    <div class="container">
+      <!-- main content - start -->
+  <!--Awal Navbar-->
+  <nav class="navbar navbar-expand-md navbar-invers fixed-top bg-black ">
+    <a class="navbar-brand" href="#">
+      <img src="image/Logo_Trijoyco.png" height="50px"  /> TRIJOYCO
+    </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarCollapse"
+      aria-controls="navbarCollapse"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!--Baris ini menunjukkan elemen menu yang akan ditampilkan ketika tombol
+    toggler diklik-->
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <!--Baris ini menunjukkan elemen menu yang akan ditampilkan ketika tombol
+      toggler diklik-->
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="Halaman_utama.html">HOME</a>
+        </li>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Contact.html">CONTACT</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" href="Materi.html">BOOKS</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>
+<!--Akhir navbar-->
+    <br /><br />
+
+    <!--Awal Contact-->
+    <div class="container">
+      <section class="mb-4">
+        <h2 class="h1-responsive font-weight-bold text-center my-5">
+          Kontak Kami
+        </h2>
+        <p class="text-center w-responsive mx-auto mb-5">
+          Apakah ada kritik dan saran? Jika ada kritik maupun saran dapat mengirimkan kepada 
+          website kami.Penyampaian kritik dan saran Anda sangat membantu dalam pengembangan website kami
+          agar menjadi lebih baik lagi
+        </p>
+
+        <div class="row">
+          <div class="col-md-9 mb-md-0 mb-5">
+            <form id="contactform">
+              <div class="row">
+                <!--Nama-->
+                <div class="col-md-6">
+                  <label for="name">Nama</label>
+                  <div class="md-form mb-0">
+                    <input
+                      type="text"
+                      name="name"
+                      class="form-control"
+                      placeholder="Nama lengkap"
+                    />
+                  </div>
+                </div>
+
+                <!--Email-->
+                <div class="col-md-6">
+                  <label for="email">Email</label>
+                  <div class="md-form mb-0">
+                    <input
+                      type="text"
+                      name="email"
+                      class="form-control"
+                      placeholder="Email"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <!--Subject-->
+              <div class="row">
+                <div class="col-md-12">
+                  <label for="subject">Subject</label>
+                  <div class="md-form mb-0">
+                    <input
+                      type="text"
+                      name="subject"
+                      class="form-control"
+                      placeholder="Subject"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <!--Pesan-->
+              <div class="row">
+                <div class="col-md-12">
+                  <label for="message">Pesan anda</label>
+                  <textarea
+                    class="form-control"
+                    id="message"
+                    rows="3"
+                  ></textarea>
+                </div>
+              </div>
+              <br />
+              <!--Kirim-->
+              <div class="text-center text-md-left">
+                <button class="btn btn-primary" type="submit">Kirim</button>
+              </div>
+            </form>
+          </div>
+          <!--Info-->
+          <div class="col-md-3 text-center text-primary">
+            <ul class="list-unstyled mb-0">
+                <br>
+                <li> <img src="image/geo-alt-fill.png" width="35">
+                <p class="text-dark">Surabaya,6082,Indonesia </p></li>
+
+                <li> <img src="image/telephone-fill.png" width="35">
+                <p class="text-dark">+62 821 9060 8716</p></li>
+
+                <br>
+                <li><img src="image/envelope-at-fill.png" width="35">
+                <p class="text-dark">trijoyco1309@gmail.com  </p></li>
+            </ul>
+        </div>
+        </div>
+      </section>
+    </div>
+    <!--Akhir Contact-->
+
+    <!-- Bootstrap core JavaScript
+ Placed at the end of the document so the pages load faster -->
+    <script src="jquery-3.6.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/popper.min.js"></script>
+  </body>
+</html>
